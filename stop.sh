@@ -1,8 +1,5 @@
-cat > /workspaces/frappe_docker_qcc/stop.sh << 'EOF'
 #!/bin/bash
-echo "Stopping QCC containers safely..."
-cd /workspaces/frappe_docker_qcc
+echo "Stopping DCL containers safely..."
+cd /workspaces/DCL-Codespace
 docker compose -f pwd.yml stop
 echo "✅ Stopped safely — data preserved"
-EOF
-chmod +x /workspaces/frappe_docker_qcc/stop.sh

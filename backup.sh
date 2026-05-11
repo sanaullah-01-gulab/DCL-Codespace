@@ -1,8 +1,8 @@
-cat > /workspaces/frappe_docker_qcc/backup.sh << 'EOF'
+cat > /workspaces/DCL-Codespace/backup.sh << 'EOF'
 #!/bin/bash
-echo "Backing up development.localhost..."
-cd /workspaces/frappe_docker_qcc
-docker compose -f pwd.yml exec backend bench --site development.localhost backup
+echo "Backing up localhost.dcl...."
+cd /workspaces/DCL-Codespace
+docker compose -f pwd.yml exec backend bench --site dcl.localhost backup
 echo "✅ Backup done!"
 EOF
-chmod +x /workspaces/frappe_docker_qcc/backup.sh
+chmod +x /workspaces/DCL-Codespace/backup.sh
